@@ -19,5 +19,20 @@
 	<string>/Library/Logs/nrpe-out.log</string>
 	<key>UserName</key>
 	<string>nagios</string>
+	<key>Sockets</key>
+	<dict>
+		<key>Listeners</key>
+		<dict>
+			<key>SockServiceName</key>
+			<string>5666</string>
+			<key>SockType</key>
+            <string>stream</string>
+		</dict>
+	</dict>
+	<key>inetdCompatibility</key>
+	<dict>
+		<key>Wait</key>
+		<false/>
+	</dict>
 </dict>
 </plist>
