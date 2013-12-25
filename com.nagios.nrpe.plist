@@ -8,9 +8,10 @@
 	<string>com.nagios.nrpe</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/bin/nrpe</string>
-		<string>-c /etc/nrpe.cfg</string>
-		<string>-d</string>
+	    <string>/usr/bin/nrpe</string>
+		<string>-c</string>
+		<string>/etc/nrpe.cfg</string>
+		<string>-i</string>
 	</array>
 	<key>StandardErrorPath</key>
 	<string>/Library/Logs/nrpe-err.log</string>
