@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GroupName</key>
+	<string>nagios</string>
+	<key>Label</key>
+	<string>com.nagios.nrpe</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/bin/nrpe</string>
+		<string>-c /etc/nrpe.cfg</string>
+		<string>-d</string>
+	</array>
+	<key>StandardErrorPath</key>
+	<string>/Library/Logs/nrpe-err.log</string>
+	<key>StandardOutPath</key>
+	<string>/Library/Logs/nrpe-out.log</string>
+	<key>UserName</key>
+	<string>nagios</string>
+</dict>
+</plist>
