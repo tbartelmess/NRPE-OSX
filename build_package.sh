@@ -65,9 +65,6 @@ function build_nrpe() {
   echo -n "Configuring NRPE... "
   ./configure > "../configure.log" 2>&1
   print_status
-  echo -n "Patching to run as standalone daemon"
-  patch "${BUILD_DIR}/nrpe/src/nrpe.c" "${WORKING_DIR}/patches/nrpe_no_daemon.patch"
-  print_status
   echo -n "Build NRPE... "
   make > "../build.log" 2>&1
   print_status
