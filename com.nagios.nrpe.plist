@@ -13,10 +13,6 @@
 		<string>/etc/nrpe.cfg</string>
 		<string>-i</string>
 	</array>
-	<key>StandardErrorPath</key>
-	<string>/Library/Logs/nrpe-err.log</string>
-	<key>StandardOutPath</key>
-	<string>/Library/Logs/nrpe-out.log</string>
 	<key>UserName</key>
 	<string>nagios</string>
 	<key>Sockets</key>
@@ -34,5 +30,9 @@
 		<key>Wait</key>
 		<false/>
 	</dict>
+    <key>StandardErrorPath</key>
+	<string>/Library/Logs/nrpe/nrpe-err.log</string>
+	<key>StandardOutPath</key>
+	<string>/Library/Logs/nrpe/nrpe-out.log</string>
 </dict>
 </plist>
