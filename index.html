@@ -46,9 +46,33 @@
 </h3>
 
 <h2>
+<a name="installation-and-setup" class="anchor" href="#installation-and-setup"><span class="octicon octicon-link"></span></a>Installation and setup</h2>
+
+<p>Just download and run the installer. The installer will setup everything that is needed to run NRPE. To setup NRPE, modify /etc/nrpe.cfg.</p>
+
+<h2>
+<a name="logging" class="anchor" href="#logging"><span class="octicon octicon-link"></span></a>Logging</h2>
+
+<p>NRPE uses syslog for logging. In addition to that, launchd is configured to redirect stdout and stderr to files in /Library/Logs/nrpe</p>
+
+<h2>
+<a name="users" class="anchor" href="#users"><span class="octicon octicon-link"></span></a>Users</h2>
+
+<p>The installer creates a nagios user and group, which will be used to run the NRPE daemon.</p>
+
+<h2>
 <a name="security" class="anchor" href="#security"><span class="octicon octicon-link"></span></a>Security</h2>
 
 <p>NRPE is launched using launchd. Launchd can't be configured to only accept connections from certain addresses. This means that you have secure NRPE yourself when the machine is exposed to a network that you are not fully trusting.</p>
+
+<h2>
+<a name="installation-location" class="anchor" href="#installation-location"><span class="octicon octicon-link"></span></a>Installation location</h2>
+
+<ul>
+<li>NRPE is installed to /usr/bin/nrpe</li>
+<li>Nagios plugins are in /usr/nagios/plugins</li>
+<li>The NRPE configuration file is located at /etc/nrpe.cfg</li>
+</ul>
       </section>
     </div>
 
