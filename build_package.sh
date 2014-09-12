@@ -56,7 +56,7 @@ function build_nrpe() {
   echo "================"
   cd "$BUILD_DIR"
   echo -n "Downloading... "
-  curl $NRPE_DOWNLOAD_URL > nrpe.tar.gz 2> nrpe-download-err.log
+  curl -L $NRPE_DOWNLOAD_URL > nrpe.tar.gz 2> nrpe-download-err.log
   print_status
   tar xfvz nrpe.tar.gz 2> nrpe-unpack.log
   mv nrpe-2.15 nrpe
