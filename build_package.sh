@@ -63,7 +63,7 @@ function build_nrpe() {
 
   cd "$BUILD_DIR/nrpe"
   echo -n "Configuring NRPE... "
-  ./configure > "../configure.log" 2>&1
+  ./configure --enable-command-args > "../configure.log" 2>&1
   print_status
   echo -n "Build NRPE... "
   make > "../build.log" 2>&1
